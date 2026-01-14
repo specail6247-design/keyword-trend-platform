@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://specail6247.github.io/keyword-trend-platform",
+  "homepage": "https://specail6247-design.github.io/keyword-trend-platform",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
