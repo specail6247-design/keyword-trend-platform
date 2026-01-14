@@ -1,0 +1,79 @@
+:root {
+  --color-mint: #a0e8af;
+  --color-blue: #a0d2eb;
+  --color-coral: #ffb7b2;
+  --color-yellow: #fff59d;
+  --color-bg: #fdfdfd;
+  --glass-border: rgba(255, 255, 255, 0.5);
+  --glass-bg: rgba(255, 255, 255, 0.25);
+  --text-primary: #2d3436;
+  --text-secondary: #636e72;
+
+  font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: var(--text-primary);
+  background-color: var(--color-bg);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+[data-theme='dark'] {
+  --color-bg: #121212; /* Darker, almost black for better contrast */
+  --glass-border: rgba(255, 255, 255, 0.15);
+  --glass-bg: rgba(20, 20, 20, 0.6); /* Darker glass for text readability */
+  --text-primary: #ffffff; /* Pure white */
+  --text-secondary: #e0e0e0; /* Very light grey */
+  
+  /* Adjust pastel colors to be slightly more vibrant/neon in dark mode if needed */
+  --color-mint: #00b894;
+  --color-blue: #0984e3;
+  --color-coral: #ff7675;
+  --color-yellow: #fdcb6e;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: var(--color-bg);
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  isolation: isolate;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Scrollbar styling for a cleaner look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
